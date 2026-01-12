@@ -1,0 +1,66 @@
+body {
+  background: #0b0f2a;
+  margin: 0;
+  font-family: Arial;
+}
+
+.app {
+  text-align: center;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 34px);
+  gap: 4px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 34px;
+  height: 34px;
+  background: #1c204d;
+  border-radius: 6px;
+}
+
+.cell.filled {
+  background: linear-gradient(145deg, #00ffcc, #0088ff);
+  box-shadow: 0 0 8px #00ffff;
+}
+
+.block-preview {
+  margin-top: 20px;
+}
+
+.block-row {
+  display: flex;
+  justify-content: center;
+}
+
+.block-cell {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  background: transparent;
+}
+
+.block-cell.filled {
+  background: linear-gradient(145deg, #ffcc00, #ff8800);
+  border-radius: 6px;
+  box-shadow: 0 0 8px #ffaa00;
+}
+
+.draggable {
+  display: inline-block;
+  cursor: grab;
+}
+.score {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 0 0 6px #ffaa00;
+}
